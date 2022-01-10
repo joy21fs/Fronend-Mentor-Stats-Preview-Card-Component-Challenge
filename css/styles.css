@@ -53,12 +53,26 @@ span {
 img {
   width: 100%;
   height: 100%;
-  opacity: 20%;
 }
 
 .image-component {
-  background-color: hsl(277, 64%, 61%);
   padding: 0;
+}
+
+.image-component::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+
+
+
+
 }
 
 /* Attribution Section */
